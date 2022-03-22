@@ -10,16 +10,16 @@ namespace Day13GenericProblem
         {
             Console.WriteLine("Welcome to program ");
             
-            Refactor1<int> refactorint = new Refactor1<int>();
-            int max1 = refactorint.MaxValue(10, 20, 30);
+            Refactor2<int> refactorint = new Refactor2<int>(10,20,30);
+            int max1 = refactorint.MaxValueOf(10, 20, 30);
             Console.WriteLine("Maximum value of int is: "+max1);
 
-            Refactor1<double> refactorfloat = new Refactor1<double>();
-            double max2 = refactorfloat.MaxValue(10.10, 20.20, 30.30);
+            Refactor2<double> refactorfloat = new Refactor2<double>(10.10, 20.20, 30.30);
+            double max2 = refactorfloat.MaxValueOf(10.10, 20.20, 30.30);
             Console.WriteLine("Maximum value of float is: " + max2);
 
-            Refactor1<string> refactorstring = new Refactor1<string>();
-            string max3 = refactorstring.MaxValue("Abhi", "avi", "lol");
+            Refactor2<string> refactorstring = new Refactor2<string>("Abhi", "avi", "lol");
+            string max3 = refactorstring.MaxValueOf("Abhi", "avi", "lol");
             Console.WriteLine("Maximum value of string is: " + max3);
         }
     }
