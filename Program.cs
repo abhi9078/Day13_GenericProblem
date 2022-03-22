@@ -8,12 +8,12 @@ namespace Day13GenericProblem
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Greater between 3 integer program ");
-            Console.WriteLine("Enter 3 Integer Value");
-            int fst=int.Parse(Console.ReadLine());
-            int snd=int.Parse(Console.ReadLine());
-            int trd=int.Parse(Console.ReadLine());
-            UC_1_MaxInteger.MaxInteger(fst, snd, trd);
+            Console.WriteLine("Welcome to Greater between 3 Floats program ");
+            Console.WriteLine("Enter 3 Floats Value");
+            double fst=double.Parse(Console.ReadLine());
+            double snd=double.Parse(Console.ReadLine());
+            double trd=double.Parse(Console.ReadLine());
+            UC_2_MaxFloat.MaxFloat(fst, snd, trd);
         }
     }
 }
