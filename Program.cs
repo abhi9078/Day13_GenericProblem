@@ -8,12 +8,19 @@ namespace Day13GenericProblem
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Greater between 3 Strings program ");
-            Console.WriteLine("Enter 3 String");
-            string fst=Console.ReadLine();
-            string snd=Console.ReadLine();
-            string trd=Console.ReadLine();
-            UC_3_MaxString.MaxString(fst, snd, trd);
+            Console.WriteLine("Welcome to program ");
+            
+            Refactor1<int> refactorint = new Refactor1<int>();
+            int max1 = refactorint.MaxValue(10, 20, 30);
+            Console.WriteLine("Maximum value of int is: "+max1);
+
+            Refactor1<double> refactorfloat = new Refactor1<double>();
+            double max2 = refactorfloat.MaxValue(10.10, 20.20, 30.30);
+            Console.WriteLine("Maximum value of float is: " + max2);
+
+            Refactor1<string> refactorstring = new Refactor1<string>();
+            string max3 = refactorstring.MaxValue("Abhi", "avi", "lol");
+            Console.WriteLine("Maximum value of string is: " + max3);
         }
     }
 }
