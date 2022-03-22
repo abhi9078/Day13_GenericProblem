@@ -18,7 +18,8 @@ namespace Day13GenericProblem
                 arr[i] = int.Parse(Console.ReadLine());
             }
 
-            UC_4_MaxMethod.Max(arr);
+            UC_5_MaxUsingGeneric<int> gen = new UC_5_MaxUsingGeneric<int>(arr);
+            gen.MaxValue();
         }
     }
 }
